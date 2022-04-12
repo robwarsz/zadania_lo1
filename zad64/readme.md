@@ -1,1 +1,1 @@
-wstępp do rozwiązania zadania 64 CKE
+wstęp do rozwiązania zadania 64 CKE
