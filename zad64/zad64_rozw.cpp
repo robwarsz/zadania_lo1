@@ -19,14 +19,34 @@ void wypiszObrazek(int i){
 	    }      
 }
 
+int rewers(int i){
+	int czarne=0;
+	for (int w=i;w<i+20;w++) {
+	    for (int k=0;k<20;k++)
+	      if(T[w][k]=='1')
+	    	czarne++;
+	    }  
+	//cout<<"\nczarne: "<<czarne;
+	return czarne>200;    
+}
+
+void zad1(){
+	int rewersy=0;
+	for (int i=0;i<4200;i+=21) 
+		if (rewers(i))
+			rewersy++;
+	cout<<"\nOdp1: "<<rewersy;			
+}
+
 
 int main() {
   int n=200*22;
   
   wczytajObrazki();
-  for (int i=0;i<4200;i+=21) {
-    wypiszObrazek(i);    
-  }
+  zad1();
+//  for (int i=0;i<4200;i+=21) {
+//    wypiszObrazek(i);    
+//  }
   
   
 }
